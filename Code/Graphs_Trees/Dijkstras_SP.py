@@ -40,7 +40,7 @@ class Dijkstras:
             for v in self.g.graph[u]:
                 if(not S.__contains__(v) and dist[u]!=math.inf and dist[u]+self.g.distance[(u,v)] < dist[v]):
                     dist[v] = dist[u] + self.g.distance[(u,v)]
-                    parent[i] = u
+                    parent[v] = u
                     
         for i in range(len(self.g.graph)):
             print(i , "   " , dist[i])

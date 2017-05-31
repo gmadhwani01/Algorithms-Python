@@ -3,9 +3,12 @@ class Graph:
     def __init__(self):
         self.graph = defaultdict(list)
         self.distance = defaultdict(list)
+        self.vertices = set()
         
     def addEdge(self,u,v,cost=None, bidirectional=True):
         self.graph[u].append(v)
+        self.vertices.add(u)
+        self.vertices.add(v)
         if(bidirectional):
             self.graph[v].append(u)
         if(cost is not None):
