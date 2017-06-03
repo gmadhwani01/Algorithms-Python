@@ -1,4 +1,4 @@
-from Graph import Graph
+from Graphs_Trees.Graph import Graph
 class BFS_DFS:
     def __init__(self):
         self.g=Graph()

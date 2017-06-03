@@ -1,4 +1,4 @@
-from Graph import Graph
+from Graphs_Trees.Graph import Graph
 import math
 
 class Dijkstras:
